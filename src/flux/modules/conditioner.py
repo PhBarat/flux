@@ -27,6 +27,7 @@ class HFEmbedder(nn.Module):
             return_overflowing_tokens=False,
             padding="max_length",
             return_tensors="pt",
+            legacy=False,
         )
 
         outputs = self.hf_module(
